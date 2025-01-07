@@ -107,31 +107,28 @@ body
     position: relative
     overflow: hidden
 
-  .swiper-slide-active:after, .swiper-slide-duplicate-active:after
-    opacity: 1
-
   .swiper-slide
     .swiper-caption__ctg
-    -webkit-transform: translate3d(0, 45px, 0);
-            transform: translate3d(0, 45px, 0);
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-out;
-    -o-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
+    -webkit-transform: translate3d(0, 45px, 0)
+            transform: translate3d(0, 45px, 0)
+    opacity: 0
+    -webkit-transition: all 0.4s ease-out
+    -o-transition: all 0.4s ease-out
+    transition: all 0.4s ease-out
 
   .swiper-slide-active .swiper-caption__ctg, .swiper-slide-duplicate-active .swiper-caption__ctg
     opacity: 1
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
+    -webkit-transform: none
+        -ms-transform: none
+            transform: none
 
   .swiper-slide .swiper-caption__ttl
-    -webkit-transform: translate3d(0, 55px, 0);
-    transform: translate3d(0, 55px, 0);
-    opacity: 0;
-    -webkit-transition: all 0.7s ease-out;
-    -o-transition: all 0.7s ease-out;
-    transition: all 0.7s ease-out;
+    -webkit-transform: translate3d(0, 55px, 0)
+    transform: translate3d(0, 55px, 0)
+    opacity: 0
+    -webkit-transition: all 0.7s ease-out
+    -o-transition: all 0.7s ease-out
+    transition: all 0.7s ease-out
 
   .swiper-slide-active .swiper-caption__ttl, .swiper-slide-duplicate-active .swiper-caption__ttl
     opacity: 1
@@ -144,11 +141,11 @@ body
     margin: 0 auto
 
   .gallery-slider .swiper-slide:hover 
-    cursor: -webkit-grab;
-    cursor: grab;
+    cursor: -webkit-grab
+    cursor: grab
 
   .gallery-slider .swiper-slide:active 
-    cursor: -webkit-grabbing;
+    cursor: -webkit-grabbing
     cursor: grabbing
 
 /*======================
@@ -164,27 +161,31 @@ body
   padding-right: 1rem
   position: relative
   z-index: 1
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: end
+      -ms-flex-align: end
+          align-items: flex-end
+  -webkit-box-pack: center
+      -ms-flex-pack: center
+          justify-content: center
   height: 100%
 
 .swiper-caption__content
-  padding: 29px 10px 103px
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  padding: 29px 10px 66px
+  -webkit-box-flex: 1
+      -ms-flex: 1
+          flex: 1
   text-align: center
-  background-color: transparent
+  background-color: var(--grayDark)
+  opacity: 0
+  -webkit-transition: all 0.7s ease-out
+  -o-transition: all 0.7s ease-out
+  transition: all 0.7s ease-out
 
 .swiper-slide-active .swiper-caption__content 
-	background-color: var(--grayDark)
+  opacity: 1
 
 
 .swiper-caption__ctg
@@ -199,11 +200,8 @@ body
   font-size: 2.5rem
   margin-bottom: 37px
   font-weight: bold
-  color: var(--grayDark)
+  color: var(--white)
   font-family: var(--mainFont)
-
-.swiper-slide-active .swiper-caption__ttl 
-	color: var(--white)
 
 /* Navigation
  *-------------------------
@@ -217,18 +215,18 @@ body
     left: auto
     right: 0
     margin-top: 0
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--primary);
-  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+      -ms-flex-align: center
+          align-items: center
+  -webkit-box-pack: center
+      -ms-flex-pack: center
+          justify-content: center
+  background-color: var(--primary)
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
 
     ion-icon
       font-size: 1.4rem

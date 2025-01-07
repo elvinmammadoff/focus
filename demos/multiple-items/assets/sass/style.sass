@@ -1,0 +1,257 @@
+@charset "utf-8"
+
+/* ----------------------------------
+ *
+ *Name: style.css
+ *Author: Alissio
+ *Website: https://www.focus-slider.com
+ *Exclusively available here: https://themeforest.net/user/alissio
+ *
+ *-------------------------------------
+
+/*====================================================
+ *
+ *
+ *	Table of Contents
+ *	
+ *	
+ *
+ *		01. Generel Styles
+ *
+ *			+ Generate Google Fonts 
+ *			+ Custom Fonts 
+ *			+ Essentials
+ *
+ *		02. Gallery Slider
+ *
+ *			+ Fade Carousel
+ *
+ *		03. Swiper Slider
+ *
+ *			+ Navigation
+ *
+ *
+ *
+ *	
+ *====================================================
+
+/*======================
+ *
+ *	01. Generel Styles 
+ *
+ *========================
+
+/* Generate Google Fonts 
+ *-------------------------
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap')
+
+/* Custom Fonts 
+ *-------------------------
+
+@font-face 
+  font-family: 'Gilroy'
+  src: url('../../assets/fonts/Gilroy-Regular.eot')
+  src: url('../../assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/Gilroy-Regular.woff2') format('woff2'), url('../../assets/fonts/Gilroy-Regular.woff') format('woff'), url('../../assets/fonts/Gilroy-Regular.ttf') format('truetype'), url('../../assets/fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face 
+  font-family: 'Gilroy'
+  src: url('../../assets/fonts/Gilroy-Bold.eot')
+  src: url('../../assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/Gilroy-Bold.woff2') format('woff2'), url('../../assets/fonts/Gilroy-Bold.woff') format('woff'), url('../../assets/fonts/Gilroy-Bold.ttf') format('truetype'), url('../../assets/fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+
+/* Essentials
+ *-------------------------
+
+\:root
+  --primary: #A58E67
+  --white: #fff
+  --gray: #ccc
+  --grayDark: rgba(51, 51, 51, 0.7)
+  --mainFont: "Gilroy"
+  --black_10: rgba(0, 0, 0, 0.1)
+  --black_30: rgba(0, 0, 0, 0.3)
+  --black_40: rgba(0, 0, 0, 0.4)
+  --black_50: rgba(0, 0, 0, 0.5)
+  --black_70: rgba(0, 0, 0, 0.7)
+  --white_20: rgba(255, 255, 255, 0.2)
+
+body
+  margin: 0
+  font-family: var(--mainFont)
+
+/*======================
+ *
+ *	02. Gallery Slider
+ *
+ *========================
+
+.gallery
+  width: 100%
+  height: 100%
+  position: relative
+
+/* Fade Carousel 
+ *-------------------------
+
+.gallery-slider
+  width: 100%
+
+  .swiper-slide
+    position: relative
+    overflow: hidden
+
+  .swiper-slide
+    .swiper-caption__ctg
+    -webkit-transform: translate3d(0, 45px, 0)
+            transform: translate3d(0, 45px, 0)
+    opacity: 0
+    -webkit-transition: all 0.4s ease-out
+    -o-transition: all 0.4s ease-out
+    transition: all 0.4s ease-out
+
+  .swiper-slide-active .swiper-caption__ctg, .swiper-slide-duplicate-active .swiper-caption__ctg
+    opacity: 1
+    -webkit-transform: none
+        -ms-transform: none
+            transform: none
+
+  .swiper-slide .swiper-caption__ttl
+    -webkit-transform: translate3d(0, 55px, 0)
+    transform: translate3d(0, 55px, 0)
+    opacity: 0
+    -webkit-transition: all 0.7s ease-out
+    -o-transition: all 0.7s ease-out
+    transition: all 0.7s ease-out
+
+  .swiper-slide-active .swiper-caption__ttl, .swiper-slide-duplicate-active .swiper-caption__ttl
+    opacity: 1
+    transform: none
+
+  .swiper-slide img
+    display: block
+    width: 100%
+    height: 100%
+
+  .gallery-slider .swiper-slide:hover 
+    cursor: -webkit-grab
+    cursor: grab
+
+  .gallery-slider .swiper-slide:active 
+    cursor: -webkit-grabbing
+    cursor: grabbing
+
+/*======================
+ *
+ *	03. Swiper Slider 
+ *
+ *========================
+
+.swiper-slide-shadow-left, .swiper-slide-shadow-right
+  display: none
+
+.swiper-caption
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  padding: 10px
+  z-index: 1
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: end
+      -ms-flex-align: end
+          align-items: flex-end
+  -webkit-box-pack: center
+      -ms-flex-pack: center
+          justify-content: center
+  height: 100%
+
+.swiper-caption__content
+  padding: 29px 10px 66px
+  -webkit-box-flex: 1
+      -ms-flex: 1
+          flex: 1
+  text-align: center
+  background-color: var(--grayDark)
+  opacity: 0
+  -webkit-transition: all 0.7s ease-out
+  -o-transition: all 0.7s ease-out
+  transition: all 0.7s ease-out
+
+.swiper-slide-active .swiper-caption__content 
+  opacity: 1
+
+
+.swiper-caption__ctg
+  letter-spacing: 4px
+  display: block
+  font-size: 1.1rem
+  font-weight: normal
+  font-family: var(--mainFont)
+  color: var(--primary)
+
+.swiper-caption__ttl
+  font-size: 1.8rem
+  margin-bottom: 1.5rem
+  font-weight: bold
+  color: var(--white)
+  font-family: var(--mainFont)
+
+/* Navigation
+ *-------------------------
+
+.slider-navigation
+  .slider-arrow
+    position: relative
+    background: none
+    width: 2.3rem
+    height: 2.3rem
+    left: auto
+    right: 0
+    margin-top: 0
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+      -ms-flex-align: center
+          align-items: center
+  -webkit-box-pack: center
+      -ms-flex-pack: center
+          justify-content: center
+  background-color: var(--primary)
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+
+    ion-icon
+      font-size: 1.4rem
+      color: var(--primary)
+
+  .swiper-button-prev
+    margin-right: 20px
+
+.gallery
+  .swiper-button-next, .swiper-button-prev
+    background-image: none
+
+.slider-navigation
+  position: absolute
+  bottom: 0
+  left: 50%
+  -webkit-transform: translateX(-50%)
+      -ms-transform: translateX(-50%)
+          transform: translateX(-50%)
+  z-index: 1
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+      -ms-flex-align: center
+          align-items: center
+  margin-bottom: 29px

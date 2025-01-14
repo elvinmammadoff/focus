@@ -48,6 +48,9 @@
 <ul>
 <li>HTML File</li>
 <li>Supporting CSS Files</li>
+<li>Supporting SASS Files</li>
+<li>Supporting SCSS Files</li>
+<li>Imported Fonts Files</li>
 <li>Supporting JS Files</li>
 
 <li>Documentation in HTML</li>
@@ -63,10 +66,7 @@
 </ul>
 <h3 id="item-description__fonts-used">Fonts used:</h3>
 <ul>
-<li><a href="https://fonts.google.com/specimen/Nunito+Sans" rel="nofollow">Nunito Sans</a></li>
-<li><a href="https://fonts.google.com/specimen/Roboto" rel="nofollow">Roboto</a></li>
-<li><a href="https://fonts.google.com/specimen/Poppins" rel="nofollow">Poppins</a></li>
-<li><a href="https://www.dafontfree.io/tuesday-night-font-free/" rel="nofollow">Tuesday Night</a></li>
+<li><a href="https://www.dafontfree.io/gilroy-font-family/" rel="nofollow">Gilroy</a></li>
 </ul>
 <h3 id="item-description__images-license">Images License:</h3><p>Thank you so much to the artists and authors who gave their permission to use their amazing works! <strong>THANK YOU!</strong></p>
 <ul>

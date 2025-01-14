@@ -201,15 +201,18 @@
           <p>Ensure the project folder is well-structured:</p>
 <pre>
   focus-slider/
-  ├── documentation/       # This Documentation File
-  ├── demos/               # Demo Slider Files
-  │   ├── index.html       # Example Slider HTML
-  │   ├── assets/          # CSS, JS, Images
-  │       ├── css/
-  │       ├── js/
-  │       ├── img/
-  ├── source/              # Source Files (Unminified JS, CSS)
-  └── README.txt           # Basic Info & Licensing
+  ├── documentation/       # Full Documentation in HTML format
+  ├── demos/               # Demo files for easy setup
+  │   ├── index.html       # Example slider file
+  │   ├── assets/          # CSS, SASS, SCSS, JS, Fonts, and Images
+  │       ├── css/         # Stylesheets
+  │       ├── sass/        # SASS supported files
+  │       ├── scss/        # SCSS supported files
+  │       ├── js/          # JavaScript files
+  │       ├── fonts/       # Fonts imported
+  │       ├── img/         # Images used in the demo
+  ├── source/              # Unminified source files (CSS/JS)
+  └── README.txt           # This file
 </pre>
         </section>
 
@@ -297,10 +300,38 @@
 
           <h1 class="section-title"><span>6.</span> Fonts Include</h1>
 
-          <p>Google Fonts imported inside <code>style.min.css</code> file</p>
+          <p>Custom Fonts imported inside <code>style.min.css</code> file</p>
 
 <pre>
-  <code>@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');</code>
+  <code>  /* Custom Fonts 
+  -------------------------*/
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/Gilroy-Regular.eot');
+    src: url('../../assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Gilroy-Regular.woff') format('woff'),
+        url('../../assets/fonts/Gilroy-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('../../assets/fonts/Gilroy-Bold.eot');
+    src: url('../../assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Gilroy-Bold.woff') format('woff'),
+        url('../../assets/fonts/Gilroy-Bold.ttf') format('truetype'),
+        url('../../assets/fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }    
+  </code>
 </pre>
         </section>
         
@@ -469,10 +500,7 @@
             </li>
             <li>
               <span class="d-block"><strong>Fonts</strong></span>
-              <a href="https://fonts.google.com/specimen/Nunito+Sans" rel="nofollow">Nunito Sans</a>
-              <a href="https://fonts.google.com/specimen/Roboto" rel="nofollow">Roboto</a>
-              <a href="https://fonts.google.com/specimen/Poppins" rel="nofollow">Poppins</a>
-              <a href="https://www.dafontfree.io/tuesday-night-font-free/" rel="nofollow">Tuesday Night</a>
+              <a href="https://www.dafontfree.io/gilroy-font-family/" rel="nofollow">Gilroy</a>
             </li>
             <li>
               <span class="d-block"><strong>Images</strong></span>

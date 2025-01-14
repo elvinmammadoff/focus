@@ -105,7 +105,7 @@ a:focus {
     transition: all 0.4s ease;
 }
 .button:hover {
-    box-shadow: 4px 3px 24px rgba(231, 47, 50, 0.5);
+    box-shadow: 4px 3px 24px rgba(165, 142, 103,);
     color: #fff;
 }
 .button:focus {

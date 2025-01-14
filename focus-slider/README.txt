@@ -14,9 +14,12 @@ focus-slider/
 ├── documentation/       # Full Documentation in HTML format
 ├── demos/               # Demo files for easy setup
 │   ├── index.html       # Example slider file
-│   ├── assets/          # CSS, JS, and Images
+│   ├── assets/          # CSS, SASS, SCSS, JS, Fonts, and Images
 │       ├── css/         # Stylesheets
+│       ├── sass/        # SASS supported files
+│       ├── scss/        # SCSS supported files
 │       ├── js/          # JavaScript files
+│       ├── fonts/       # Fonts imported
 │       ├── img/         # Images used in the demo
 ├── source/              # Unminified source files (CSS/JS)
 └── README.txt           # This file
